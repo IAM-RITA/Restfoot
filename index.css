@@ -1,0 +1,914 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  outline: 0px;
+  border: 0px;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: poppins-bold;
+  src: url('fonts/Poppins-Bold.ttf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: poppins-regular;
+  src: url('fonts/Poppins-Regular.ttf');
+  font-weight: regular;
+}
+@font-face {
+  font-family: roboto-bold;
+  src: url('fonts/Roboto-Bold.ttf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: roboto-regular;
+  src: url('fonts/Roboto-Regular.ttf')
+}
+/** Animations **/
+@keyframes onload {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slide1 {
+  0% {
+    transform:translateY(-100em);
+  }
+  100% {
+    transform: none;
+  }
+}
+@keyframes vanish {
+  0% {
+    transform: none;
+    position: fixed;
+  }
+  100% {
+    transform: translateX(100em);
+    position: fixed;
+  }
+}
+@keyframes slide3 {
+  0% {
+    transform: translateY(-100em);
+  }
+  100% {
+    transform: none;
+  }
+}
+@keyframes slide4 {
+  0% {
+    transform: none;
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(-100em);
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@keyframes clicked {
+  0% {
+    transform: scale(.85);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes onmodal {
+  0% {
+    transform: translate(-100em);
+  }
+  100% {
+    transform: none;
+  }
+}
+@keyframes closemodal {
+  0% {
+    transform: translate(0em);
+  }
+  100% {
+    transform: translate(-100em);
+  }
+}
+html::-webkit-scrollbar {
+  width: 3px;
+}
+html::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 50em;
+}
+.cat-wrapper::-webkit-scrollbar,
+.cart-wrapper::-webkit-scrollbar,
+.cart-scroll::-webkit-scrollbar {
+  width: 0px;
+}
+.cart-scroll::-webkit-scrollbar {
+  width: 1px;
+}
+/** Hovers **/
+
+header nav ul li a:hover {
+  color: #717171;
+}
+header nav ul li button:hover {
+  background: url(img/cartw2.png) no-repeat center;
+  background-size: contain;
+}
+
+.hero .cols-2 a:hover {
+  box-shadow: -1px 2px 5px black;
+  transform: scale(.95);
+}
+
+.display .boxes:hover,
+.how .boxes:hover,
+.testimonials .boxes:hover,
+.cat-wrapper .a .boxes:hover{
+  transform: translateY(-5px);
+}
+.categories button:hover:after {
+  transform: scale(.8);
+}
+
+.cart-wrapper .cart-title button:hover {
+  color: #717171;
+}
+
+.cat-wrapper .a .boxes button:hover,
+.food-modal2 .cols-2 .btn-wrapper button:hover,
+.contact-wrapper .cols-2 form .submit:hover,
+.cart-wrapper .cartshell .cols-2 .btn-wrapper button:hover {
+  background: linear-gradient(to bottom right, #ff5353,#ff1c1c, #ff5353);
+  box-shadow: 0px 0px 5px #b83232;
+}
+.food-modal2 .cols-2 .qwrapper .dec:hover,
+.food-modal2 .cols-2 .qwrapper .inc:hover {
+  background: linear-gradient(to bottom right, #382828,#0d0d0d, #382828);
+  color: white;
+}
+
+.contact-wrapper .cols-2 .box a:hover {
+  filter: grayscale(1);
+}
+
+/** Before After **/
+.categories button:after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 50em;
+  transform: scale(0);
+}
+.categories .a:after {
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 50em;
+  transform: scale(.8);
+}
+
+.a3 {
+  color: #e30000;
+}
+.a4 {
+  background: url(img/cartw2.png) no-repeat center;
+  background-size: contain;
+}
+button {
+  cursor: pointer;
+}
+.boxes {
+  border-radius: 10px;
+  margin: 10px;
+}
+h2 {
+  font-size: 18px;
+  padding: 20px 0px;
+}
+ h3 {
+  font-family: poppins-regular;
+   font-size: 16px;
+   letter-spacing: .5px;
+   padding: 5px;
+}
+.display, .how, .testimonials, .cat-wrapper .a {
+  padding-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.categories button:after {
+  background: white;
+}
+
+.display .boxes,
+.how .boxes,
+.testimonials .boxes,
+.cat-wrapper .a .boxes,
+.cat-wrapper .a .boxes button,
+.cart-wrapper .cartshell,
+.food-modal2 button,
+.food-modal2 .cols-2 .btn-wrapper button,
+.food-modal2 .cols-2 table,
+.food-modal2 .cols-2 .qwrapper .dec,
+.food-modal2 .cols-2 .qwrapper .inc,
+.contact-wrapper .cols-2 form,
+.contact-wrapper .cols-2 form .submit,
+.contact-wrapper .cols-2 .box a,
+.contact-wrapper .box,
+.contact-wrapper .links {
+  transition: .2s ease-in-out;
+  background: linear-gradient(to bottom right, rgb(27, 27, 27),rgb(10, 10, 10),rgb(26, 26, 26));
+}
+
+.boxes,
+.food-modal2 .cols-2 table,
+.contact-wrapper .cols-2 form,
+.contact-wrapper .box table,
+.contact-wrapper .box .links,
+.cart-wrapper .cartshell {
+  box-shadow: 
+  0px 0px 2px white,
+  0px 0px 5px rgb(54, 54, 54);
+}
+
+body {
+  font-family: roboto-regular;
+  font-size: 16px;
+  color: black;
+  animation: onload 1s ease-in-out 1;
+  background: rgb(12,12,12);
+  color: white;
+}
+
+header nav {
+  width: 100%;
+  height: 3.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(145, 145, 145);
+}
+
+header nav .logo {
+  font-size: x-large;
+  position: relative;
+  color: inherit;
+  left: 100px;
+  font-family: poppins-bold;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  font-family: poppins-regular;
+}
+header nav ul li {
+  position: relative;
+  right: 10px;
+}
+header nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: inherit;
+  text-transform: uppercase;
+}
+header nav ul li button {
+  background: url('img/cartw.png') no-repeat center;
+  background-size: contain;
+  width: 3em;
+  height: 2.3em;
+}
+header nav ul li button .a2 {
+  position: absolute;
+  color: white;
+  padding: 0px 5px;
+  border-radius: 10px;
+  top: 0px;
+  font-size: 1.1em;
+  background: black;
+}
+header nav ul li.navbtn {
+  display: none;
+}
+.mobile-list {
+  display: none;
+}
+.hero {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0px;
+  background: linear-gradient(to bottom right, rgb(27, 27, 27),rgb(10, 10, 10),rgb(26, 26, 26))
+}
+.hero .cols-2 {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero .cols-2:nth-child(1) {
+  align-items: center;
+}
+.hero .cols-2 h1 {
+  font-size: 3rem;
+  font-family: poppins-bold;
+}
+.hero .cols-2 p {
+  width: 55%;
+  text-align: left;
+}
+.hero img {
+  width: 90%;
+  border-radius: 10px;
+}
+.hero .cols-2 a {
+  color: inherit;
+  background: linear-gradient(to bottom right, #ff5353,#fc0404, #ff5353);
+  display: block;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px #b83232;
+  margin: 30px 0px 0px;
+  transition: .1s ease-in-out;
+}
+.display {
+  width: 100%;
+  height: auto;
+}
+.display h2 {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+.display .food-card {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.display .food-card .boxes {
+  width: 15%;
+  height: auto;
+  display: block;
+  text-align: center;
+  padding: 10px;
+}
+.display .food-card .boxes img {
+  width: 100%;
+}
+.display .food-card .boxes p {
+  word-break: break-all;
+  text-align: left;
+  margin: 10px 0px 2px;
+}
+.display .food-card .boxes .stars {
+  width: 100%;
+  display: block;
+  height: auto;
+  text-align: left;
+}
+.display .food-card .boxes .stars img {
+  width: 10%;
+}
+.how {
+  width: 100%;
+  height: auto;
+}
+.how h2 {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+.how .how-wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.how .how-wrapper .boxes {
+  width: 15%;
+  height: auto;
+  display: block;
+  padding: 10px;
+  text-align: center;
+  color: inherit;
+}
+.how .how-wrapper .boxes p {
+  word-break: break-all;
+  text-align: left;
+}
+.how .how-wrapper .boxes img {
+  width: 30%;
+  border-radius: 10em;
+}
+
+.testimonials {
+  width: 100%;
+  height: auto;
+}
+.testimonials h2 {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+.testimonials .testimonials-wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.testimonials .testimonials-wrapper .boxes {
+  width: 15%;
+  height: auto;
+  display: block;
+  padding: 10px;
+  text-align: center;
+}
+.testimonials .testimonials-wrapper .boxes .stars {
+  width: 100%;
+  display: block;
+}
+.testimonials .testimonials-wrapper .boxes .stars img {
+  width: 8%;
+}
+.testimonials .testimonials-wrapper .boxes img {
+  width: 70%;
+  border-radius: 50em;
+}
+.testimonials .testimonials-wrapper .boxes p {
+  text-align: left;
+  word-break: break-all;
+}
+
+footer {
+  width: 100%;
+  height: 3.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/** Contact Styles **/
+.contact-wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.contact-wrapper .cols-2 {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.contact-wrapper .cols-2 form, 
+.contact-wrapper .cols-2 .box {
+  width: 70%;
+  height: auto;
+  display: block;
+  text-align: center;
+  border-radius: 10px;
+}
+.contact-wrapper .cols-2 form h3 {
+  margin: 20px 0px 10px;
+}
+.contact-wrapper .cols-2 form input,
+.contact-wrapper .cols-2 form textarea{
+  width: 85%;
+  padding: 10px 0px 10px 10px;
+  border-radius:0px 10px 10px 0px;
+  margin: 10px;
+  color: #ffffff;
+  background: #0e0e0e;
+  box-shadow: 0px 0px 2px #ffffff, 0px 0px 5px #1b1b1b;
+}
+.contact-wrapper .cols-2 form textarea {
+  height: 150px;
+  resize: none;
+}
+.contact-wrapper .cols-2 form ::placeholder {
+  color: #cfcfcf;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance:textfield;
+}
+.contact-wrapper .cols-2 form .submit {
+  color: inherit;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 10px 0px 20px;
+  background: linear-gradient(to bottom right, #ff5353,#fc0404, #ff5353);
+  box-shadow: 0px 0px 5px #b83232;
+}
+.contact-wrapper .cols-2 .box table{
+  border-collapse: collapse;
+  margin: auto;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.contact-wrapper .cols-2 .box table td {
+  padding: 10px;
+  border: none;
+}
+.contact-wrapper .cols-2 .box table td:nth-child(1) {
+  border-right: 1px solid black;
+}
+.contact-wrapper .cols-2 .box table td:nth-child(1),
+.contact-wrapper .cols-2 .box table td:nth-child(3),
+.contact-wrapper .cols-2 .box table td:nth-child(5),
+.contact-wrapper .cols-2 .box table td:nth-child(7) {
+  font-weight: 600;
+}
+.contact-wrapper .cols-2 .box .links {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.contact-wrapper .cols-2 .box .links .fb,
+.contact-wrapper .cols-2 .box .links .ig,
+.contact-wrapper .cols-2 .box .links .twitter,
+.contact-wrapper .cols-2 .box .links .tiktok {
+  width: 2.5em;
+  height: 2.5em;
+  display: block;
+  margin: 0px 10px;
+}
+.contact-wrapper .cols-2 .box .links .fb {
+  background: url(img/fbc.PNG) no-repeat center;
+  background-size: cover;
+}
+.contact-wrapper .cols-2 .box .links .ig {
+  background: url(img/igc.png) no-repeat center;
+  background-size: cover;
+}
+.contact-wrapper .cols-2 .box .links .twitter {
+  background: url(img/twitterc.png) no-repeat center;
+  background-size: cover;
+}
+.contact-wrapper .cols-2 .box .links .tiktok {
+  background: url(img/tc.PNG) no-repeat center;
+  background-size: cover;
+}
+
+
+/** Menu Styles **/
+.hide {
+  display: none;
+}
+.categories {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.categories button {
+  padding: 7px 15px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin: 0px 10px;
+  font-weight: 600;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+  color: inherit;
+}
+.cat-wrapper {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  position: relative;
+}
+.cat-wrapper .a {
+  width: 100%;
+  height: auto;
+  padding: 10px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.cat-wrapper .a .boxes {
+  width: 16%;
+  height: auto;
+  display: block;
+  text-align: center;
+  padding: 10px 0px;
+  margin: 15px 15px;
+  border-radius: 10px;
+}
+.cat-wrapper .a .boxes img {
+  width: 80%;
+}
+.cat-wrapper .a .boxes hr {
+  box-shadow: 0px 1px 2px #ffffff;
+  height: 1px;
+  margin: 10px auto 5px;
+}
+.cat-wrapper .a .boxes ul {
+  text-align: left;
+  padding-left: 25px;
+}
+.cat-wrapper .a .boxes ul li {
+  list-style-type: circle;
+  padding: 2px 0px;
+}
+.cat-wrapper .a .boxes button {
+  padding: 8px 20px;
+  margin-top: 15px;
+  border-radius: 5px;
+  color: inherit;
+  font-weight: 600;
+  text-transform: lowercase;
+  background: linear-gradient(to bottom right, #ff5353,#fc0404, #ff5353);
+  box-shadow: 0px 0px 5px #b83232;
+}
+
+.single-person, .two-person, .family-meal {
+  transform: translateX(-100em);
+  transition: .7s ease-in-out;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+.cat-wrapper .b {
+  transform: none;
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+}
+
+/** Food Cart Panel **/
+.cart-wrapper {
+  width: 45%;
+  max-height: 90vh;
+  z-index: 1;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 0px 0px 0px 10px;
+  display: none;
+  background: rgba(0,0,0,0.9);
+  box-shadow: 
+  0px 0px 2px white,
+  0px 0px 5px rgb(54, 54, 54);
+  color: inherit;
+  overflow-y: scroll;
+}
+.slide {
+  display: block;
+  position: absolute;
+  right: 0;
+  animation: slide1 .7s ease-in-out 1;
+}
+.vanish {
+  animation: vanish .5s ease-in-out 1;
+}
+.cart-wrapper .cart-scroll {
+  height: auto;
+  overflow: hidden;
+}
+.padding {
+  padding: 10px;
+}
+.cart-wrapper .cart-title {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+.cart-wrapper .cart-title h2 {
+  padding: 0;
+  margin: 0;
+  width: 90%;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.cart-wrapper .cart-title button {
+  font-size: 1.5em;
+  font-weight: 600;
+  padding: 0px 5px;
+  background: transparent;
+  display: block;
+  color: white;
+}
+
+.cart-wrapper .cartshell {
+  margin: 20px 0px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  padding: 10px;
+  transition: .5s ease-in-out;
+  color: inherit;
+}
+.cart-wrapper .cartshell .cols-2 {
+  width: 50%;
+  height: auto;
+}
+.cart-wrapper .cartshell .cols-2:nth-child(1) {
+  text-align: center;
+  border-right: 1px solid #ffffff;
+}
+.cart-wrapper .cartshell .cols-2 h3 {
+  display: block;
+  text-align: center;
+  padding: 15px 0px 0px;
+}
+.cart-wrapper .cartshell .cols-2 img {
+  width: 65%;
+}
+.cart-wrapper .cartshell .cols-2 table {
+  margin: auto;
+}
+.cart-wrapper .cartshell .cols-2 table td {
+  padding: 10px 20px;
+}
+.cart-wrapper .cartshell .cols-2 table td:nth-child(1),
+.cart-wrapper .cartshell .cols-2 table td:nth-child(3),
+.cart-wrapper .cartshell .cols-2 table td:nth-child(5) {
+  font-weight: 600;
+}
+.cart-wrapper .cartshell .cols-2 .btn-wrapper {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin-top: 20px;
+}
+.cart-wrapper .cartshell .cols-2 .btn-wrapper > button {
+  padding: 10px 20px;
+  margin: 0px 10px;
+  color: inherit;
+  border-radius: 10px;
+  background: linear-gradient(to bottom right, #ff5353,#fc0404, #ff5353);
+  box-shadow: 0px 0px 5px #b83232;
+}
+
+.food-modal {
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.omodal {
+  z-index: 1;
+  animation: slide3 .7s ease-in-out 1;
+  display: flex;
+  background: rgba(0, 0, 0, 0.8);
+}
+.cmodal {
+  animation: slide4 1s ease-in-out 1;
+  display: flex;
+  z-index: 1;
+  transform: translateY(-100em);
+}
+.food-modal2 {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.945);
+  color: inherit;
+}
+.food-modal2 .cbtn {
+  font-weight: 600;
+  color: inherit;
+  background: transparent;
+  display: block;
+  font-size: 1.1em;
+  align-self: flex-start;
+  width: 1.5em;
+  height: 1.5em;
+  position: relative;
+  top: -15px;
+  box-shadow: 0px 0px 3px hsl(0, 0%, 100%);
+  border-radius: 50em;
+}
+.food-modal2 .cols-2 {
+  width: 50%;
+  height: auto;
+  display: block;
+  text-align: center;
+}
+.food-modal2 .cols-2 h3 {
+  font-size: 1.5em;
+}
+.food-modal2 .cols-2 img {
+  width: 100%;
+}
+.food-modal2 .cols-2 table {
+  border-collapse: collapse;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+.food-modal2 .cols-2 table td:nth-child(1) {
+  border-right: 1px solid hsl(0, 0%, 100%);
+}
+.food-modal2 .cols-2 table td {
+  padding: 10px 25px;
+}
+.food-modal2 .cols-2 .qwrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+}
+.food-modal2 .cols-2 .qwrapper p {
+  margin-right: 10px;
+}
+.food-modal2 .cols-2 .qwrapper .box {
+  flex-wrap: wrap;
+  width: 1.8em;
+  height: 1.8em;
+  margin: 0px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 3px #ffffff;
+  border-radius: 5px;
+  color: inherit;
+}
+.food-modal2 .cols-2 .qwrapper .dec,
+.food-modal2 .cols-2 .qwrapper .inc {
+  cursor: pointer;
+  font-size: inherit;
+}
+.food-modal2 .cols-2 .qwrapper .num {
+  font-size: inherit;
+}
+.food-modal2 .cols-2 .btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.food-modal2 .cols-2 .btn-wrapper button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 10px 10px;
+  background: linear-gradient(to bottom right, #ff5353,#fc0404, #ff5353);
+  box-shadow: 0px 0px 5px #b83232;
+  color: inherit;
+}

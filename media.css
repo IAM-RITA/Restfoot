@@ -1,0 +1,925 @@
+
+@media screen and (max-width: 1180px) {
+  .cart-wrapper .cartshell .cols-2 table td {
+    padding: 6px;
+  }
+  .food-modal2 {
+    width: 70%;
+  }
+  .food-modal2 .cbtn {
+    display: block;
+    padding: 0px 0px;
+    font-size: 1.5em;
+  }
+  .display .food-card .boxes {
+    width: 17%;
+  }
+  .hero .cols-2 p {
+    widows: 100%;
+    word-break: normal;
+  }
+}
+@media screen and (max-width: 1138px) {
+  .display .food-card .boxes {
+    width: 19%;
+  }
+  .cat-wrapper .a .boxes {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .cart-wrapper {
+    width: 55%;
+  }
+  .display .food-card .boxes {
+    width: 20%;
+  }
+  .how .how-wrapper .boxes,
+  .testimonials .testimonials-wrapper .boxes {
+    width: 17%;
+  }
+  .contact-wrapper .cols-2 form,
+  .contact-wrapper .cols-2 .box {
+    width: 85%;
+  }
+  .food-modal2 {
+    width: 75%;
+  }
+  .hero .cols-2 p {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 960px) {
+  .display .food-card .boxes {
+    width: 22%;
+  }
+  .how .how-wrapper .boxes,
+  .testimonials .testimonials-wrapper .boxes {
+    width: 20%;
+  }
+  .food-modal2 .cbtn {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 926px) {
+  .contact-wrapper {
+    height: auto;
+    margin: 10px 0px;
+  }
+  .cat-wrapper .a .boxes {
+    width: 23%;
+  }
+}
+@media screen and (max-width: 912px) {
+  .contact-wrapper {
+    height: 100vh;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 854px) {
+  .hero .cols-2 h1 {
+    width: 80%;
+  }
+  .display .food-card {
+    flex-wrap: wrap;
+  }
+  .display .food-card .boxes {
+    width: 25%;
+  }
+  .contact-wrapper .cols-2 form,
+  .contact-wrapper .cols-2 .box {
+    width: 100%;
+  }
+  .cart-wrapper {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 846px) {
+  .food-modal {
+    height: 100%;
+  }
+  .food-modal2 {
+    height: 95vh;
+  }
+  .contact-wrapper {
+    height: auto;
+  }
+}
+@media screen and (max-width: 823px) {
+  .contact-wrapper {
+    height: auto;
+  }
+}
+@media screen and (max-width: 820px) {
+  .contact-wrapper {
+    height: 100vh;
+    flex-direction: column;
+  }
+  .food-modal2 {
+    height: auto;
+  }
+  .hero .cols-2 h1 {
+    width: 85%;
+  }
+  .testimonials .testimonials-wrapper {
+    flex-wrap: wrap;
+  }
+  .testimonials .testimonials-wrapper .boxes {
+    width: 23%;
+  }
+}
+@media screen and (max-width: 812px) {
+  .hero .cols-2 h1 {
+    width: 85%;
+  }
+  .contact-wrapper {
+    height: auto;
+  }
+  .food-modal2 {
+    height: 95vh;
+  }
+}
+@media screen and (max-width: 800px) {
+  .contact-wrapper {
+    height: 100vh;
+  }
+  .display .food-card .boxes {
+    width: 28%;
+  }
+  .testimonials .testimonials-wrapper .boxes {
+    width: 24%;
+  }
+  .cat-wrapper .a .boxes {
+    width: 29%;
+  }
+  .food-modal2 {
+    height: auto;
+  }
+}
+@media screen and (max-width: 786px) {
+  header nav ul li {
+    right: 20px;
+  }
+  .contact-wrapper {
+    height: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero .cols-2 h1 {
+    width: 90%;
+  }
+  .display .food-card .boxes {
+    width: 28%;
+  }
+  .how .how-wrapper .boxes,
+  .testimonials .testimonials-wrapper .boxes {
+    width: 25%;
+  }
+  .contact-wrapper {
+    height: 100vh
+  }
+  .cat-wrapper .a .boxes {
+    width: 28%;
+  }
+  .food-modal2 {
+    height: auto;
+  }
+}
+@media screen and (max-width: 745px) {
+  header nav .logo {
+    left: 80px;
+  }
+  .hero .cols-2 h1 {
+    width: 90%;
+    padding: 0px;
+    margin: 0;
+  }
+  .display .food-card .boxes {
+    width: 30%;
+  }
+  .how .how-wrapper .boxes {
+    width: 25%;
+  }
+  .testimonials .testimonials-wrapper {
+    flex-wrap: wrap;
+  }
+  .testimonials .testimonials-wrapper .boxes {
+    width: 27%;
+  }
+  .cat-wrapper .a .boxes {
+    width: 28%;
+  }
+  .food-modal2 {
+    justify-content: space-around;
+    width: 90%;
+    height: 96vh;
+  }
+  .food-modal2 .cols-2 {
+    width: 45%;
+  }
+  .food-modal2 .cbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cart-wrapper {
+    width: 70%;
+  }
+  .contact-wrapper {
+    flex-direction: row;
+    height: auto;
+  }
+}
+@media screen and (max-width: 740px) {
+  .contact-wrapper .cols-2 {
+    padding: 10px 10px;
+  }
+  .food-modal2 {
+    height: 95vh;
+  }
+}
+@media screen and (max-width: 736px) {
+  .food-modal2 {
+    height: auto;
+  }
+}
+@media screen and (max-width: 720px) {
+  .hero .cols-2 h1 {
+    font-size: 2.5em;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 712px) {
+  .contact-wrapper {
+    height: 100vh;
+    flex-direction: column;
+  }
+  .contact-wrapper .cols-2 {
+    width: 100%;
+  }
+  .contact-wrapper .cols-2 form,
+  .contact-wrapper .cols-2 .box {
+    width: 55%;
+  }
+}
+@media screen and (max-width: 684px) {
+  .contact-wrapper {
+    height: auto;
+  }
+  .cart-wrapper .cart-scroll .cartshell img {
+    width: 100%;
+  }
+  .cart-wrapper .cart-scroll .cartshell .cols-2 .btn-wrapper > button {
+    margin: 5px 10px;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 667px) {
+  .hero .cols-2 h1 {
+    width: 85%;
+  }
+  .hero .cols-2 p {
+    width: 90%;
+  }
+  .food-modal2 {
+    height: 95vh;
+  }
+  .cart-wrapper {
+    width: 80%;
+  }
+  .contact-wrapper {
+    height: auto;
+  }
+  .contact-wrapper .cols-2 .box,
+  .contact-wrapper .cols-2 form {
+    width: 60%;
+  }
+  .contact-wrapper .cols-2 .box table td{
+    padding: 10px 0px;
+  }
+}
+@media screen and (max-width: 658px) {
+  header nav .logo {
+    left: 50px;
+  }
+  .food-modal2 .cols-2:nth-child(3) {
+    transform: scale(.85);
+  }
+}
+@media screen and (max-width: 653px) {
+  .contact-wrapper .cols-2,
+  .contact-wrapper .cols-2 {
+    padding: 10px 4px;
+  }
+  .contact-wrapper .cols-2:nth-child(2) {
+    transform: scale(.9);
+  }
+  .contact-wrapper .cols-2 .box table td {
+    padding: 10px 5px;
+  }
+  .food-modal2 .cols-2:nth-child(3) {
+    transform: scale(.75);
+  }
+}
+@media screen and (max-width: 640px) {
+  .hero .cols-2 h1 {
+    width: 90%;
+  }
+  .display .food-card .boxes {
+    width: 35%;
+  }
+  .food-modal2 .cols-2:nth-child(3) {
+    transform: scale(.9);
+  }
+  .food-modal .cols-2 .btn-wrapper > button {
+    padding: 10px 15px;
+  }
+  .contact-wrapper .cols-2 form,
+  .contact-wrapper .cols-2 .box {
+    width: 55%;
+  }
+  .cat-wrapper .a .boxes {
+    width: 30%;
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero .cols-2 h1 {
+    font-size: 2.2rem;
+    width: 85%;
+  }
+  .hero .cols-2 p {
+    width: 85%;
+  }
+  .display .food-card .boxes {
+    width: 40%;
+  }
+  .how .how-wrapper .boxes {
+    width: 27%;
+  }
+  .testimonials .testimonials-wrapper .boxes {
+    width: 35%;
+  }
+  .cat-wrapper .a .boxes {
+    width: 40%;
+  }
+  .contact-wrapper {
+    flex-direction: column;
+    height: 100vh;
+  }
+  .contact-wrapper .cols-2 form,
+  .contact-wrapper .cols-2 .box {
+    width: 65%;
+  }
+  .food-modal {
+    height: 100vh;
+    flex-direction: column;
+  }
+  .cart-wrapper {
+    width: 90%;
+  }
+  .food-modal2 {
+    padding: 20px 0px;
+    margin: 0;
+    border-radius: 0;
+    flex-direction: column;
+    width: 100%;
+    height: inherit;
+    display: flex;
+    overflow-y: scroll;
+    background: rgba(0,0,0,0.5);
+    justify-content: center;
+    color: white;
+  }
+  .food-modal2 .cols-2 table {
+    background: white;
+    color: black;
+    box-shadow: none;
+  }
+  .food-modal2 .cols-2 .qwrapper .dec,
+  .food-modal2 .cols-2 .qwrapper .num,
+  .food-modal2 .cols-2 .qwrapper .inc
+  {
+    box-shadow: none;
+  }
+  .food-modal2 .cols-2 .qwrapper .num {
+    background: #fff;
+  }
+  .food-modal2 .cols-2 {
+    width: 100%;
+  }
+  .food-modal2 .cols-2 img {
+    width: 60%;
+    background-color: white;
+    border-radius: 20px;
+  }
+  .food-modal2 .cols-2 table td{
+    padding: 10px 40px;
+  }
+  .food-modal2 .cols-2:nth-child(3) {
+    transform: none;
+  }
+  .food-modal2 .cbtn {
+    top: 10px;
+    right: 15px;
+    position: absolute;
+    color: white;
+    font-size: 1.5em;
+    box-shadow: none;
+  }
+  .food-modal2 .cols-2 .btn-wrapper > button {
+    box-shadow: none;
+    background: linear-gradient(to bottom right, #9ca29a, #323932, #faf3f3);
+    color: white;
+  }
+}
+@media screen and (max-width: 568px) {
+  header nav ul li {
+    right: 0px;
+  }
+  header nav ul li.navbtn {
+    position: relative;
+    width: 1.8em;
+    height: 1.5em;
+    margin: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  header nav ul .navbtn .lines {
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    transition: .1s ease-in-out;
+  }
+  header nav ul .navbtn .lines:nth-child(1) {
+    width: 60%;
+    align-self: flex-end;
+  }
+  header nav ul .navbtn .lines:nth-child(3) {
+    width: 60%;
+    align-self: flex-start;
+  }
+  header nav ul .navbtn .change {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  header nav ul .navbtn .change:nth-child(2) {
+    display: none;
+  }
+  header nav ul .navbtn .change:nth-child(1) {
+    transform: rotate(45deg);
+    width: 90%;
+    align-self: center;
+  }
+  header nav ul .navbtn .change:nth-child(3) {
+    transform: rotate(-45deg);
+    width: 90%;
+    align-self: center;
+  }
+  header nav ul li:nth-child(1),
+  header nav ul li:nth-child(2),
+  header nav ul li:nth-child(3) {
+    display: none;
+  }
+  .mobile-list {
+    display: block;
+    overflow: hidden;
+    max-height: 0px;
+    transition: .2s ease-in-out;
+    background: rgba(0,0,0,0.9);
+  }
+  .mobile-list li a {
+    padding: 20px 10px 20px 0px;
+    text-align: right;
+    display: block;
+    text-transform: uppercase;
+    color: white;
+  }
+  .hero {
+    flex-direction: column-reverse;
+  }
+  .hero .cols-2 {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    text-align: center;
+  }
+  .hero .cols-2 img {
+    padding: 0;
+    margin: 0;
+    width: 50%;
+  }
+  .hero .cols-2 p {
+    width: 60%;
+    word-break: break-all;
+    text-align: left;
+  }
+  .display .food-card .boxes {
+    width: 45%;
+  }
+  .how .how-wrapper .boxes {
+    width: 30%;
+  }
+  .testimonials .testimonials-wrapper .boxes {
+    width: 40%;
+  }
+  .contact-wrapper {
+    flex-direction: column;
+    height: auto;
+  }
+  .contact-wrapper .cols-2 {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+  .contact-wrapper .cols-2 form {
+    width: 65%;
+    margin: 0px 0px 20px;
+  }
+  .contact-wrapper .cols-2:nth-child(2) {
+    transform: none;
+  }
+  .contact-wrapper .cols-2 .box {
+    width: 90%;
+  }
+  .cart-wrapper {
+    width: 100%;
+  }
+  .cat-wrapper .a .boxes {
+    width: 40%;
+  }
+  .food-modal {
+    height: 100vh;
+    flex-direction: column;
+  }
+  .food-modal2 {
+    padding: 20px 0px;
+    margin: 0;
+    border-radius: 0;
+    flex-direction: column;
+    width: 100%;
+    height: inherit;
+    display: block;
+    overflow-y: scroll;
+    background: white;
+    color: black;
+  }
+  .food-modal2 .cols-2 table {
+    background: white;
+    color: black;
+    box-shadow: none;
+  }
+  .food-modal2 .cols-2 .qwrapper .dec,
+  .food-modal2 .cols-2 .qwrapper .num,
+  .food-modal2 .cols-2 .qwrapper .inc
+  {
+    box-shadow: none;
+  }
+  .food-modal2 .cols-2 .qwrapper .num {
+    background: #fff;
+  }
+  .food-modal2 .cols-2 {
+    width: 100%;
+  }
+  .food-modal2 .cols-2 img {
+    width: 60%;
+    background-color: white;
+    border-radius: 20px;
+  }
+  .food-modal2 .cols-2 table td{
+    padding: 10px 40px;
+  }
+  .food-modal2 .cols-2:nth-child(3) {
+    transform: none;
+  }
+  .food-modal2 .cbtn {
+    top: 10px;
+    right: 15px;
+    position: absolute;
+    color: black;
+    font-size: 1.5em;
+    box-shadow: none;
+  }
+  .food-modal2 .cols-2 .btn-wrapper > button {
+    box-shadow: none;
+    background: linear-gradient(to bottom right, #382828,#000000, #382828);
+    color: white;
+  }
+ 
+}
+@media screen and (max-width: 540px) {
+  .food-modal2 {
+    display: flex;
+  }
+  .hero .cols-2 img {
+    width: 65%;
+  }
+  .hero .cols-2 h1 {
+    font-size: 2.7rem;
+  }
+}
+@media screen and (max-width: 533px) {
+  .food-modal2 {
+    display: block;
+  }
+}
+@media screen and (max-width: 480px) {
+  .how .how-wrapper .boxes {
+    width: 35%;
+  }
+  .cart-wrapper .cart-scroll .cartshell img {
+    width: 100%;
+  }
+  .cart-wrapper .cart-scroll .cartshell .btn-wrapper {
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .cart-wrapper .cart-scroll .cartshell .btn-wrapper > button {
+    margin: 5px 10px;
+  }
+  .cat-wrapper .a .boxes {
+    width: 43.5%;
+  }
+  .food-modal2 {
+    display: flex;
+  }
+}
+@media screen and (max-width: 428px) {
+  .hero .cols-2 img {
+    width: 50%;
+  }
+  .hero .cols-2 h1 {
+    font-size: 2.2rem;
+  }
+  .display .food-card .boxes {
+    width: 55%;
+  }
+  .how .how-wrapper .boxes {
+    width: 40%;
+  }
+  .contact-wrapper .cols-2 form,
+  .contact-wrapper .cols-2 .boxes {
+    width: 90%;
+  }
+  .cat-wrapper .a .boxes {
+    width: 55%;
+  }
+  .food-modal2 {
+    display: flex;
+  }
+  .cart-wrapper .cartshell {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .cart-wrapper .cartshell .cols-2 {
+    width: 100%;
+  }
+  .cart-wrapper .cartshell .cols-2:nth-child(1) {
+    border: none;
+  }
+}
+@media screen and (max-width: 414px) {
+  .hero .cols-2 img {
+    width: 70%;
+  }
+  .display .food-card .boxes {
+    width: 60%;
+  }
+  .testimonials .testimonials-wrapper .boxes {
+    width: 55%;
+  }
+  .cat-wrapper .a .boxes {
+    width: 58%;
+  }
+  .cart-wrapper .cart-scroll .cartshell img {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 412px) {
+  .hero .cols-2 img {
+    width: 65%;
+  }
+  .display .food-card .boxes {
+    width: 57%;
+  }
+  .testimonials .testimonials-wrapper .boxes {
+    width: 45%;
+  }
+  .cat-wrapper .a .boxes {
+    width: 60%;
+  }
+  .contact-wrapper {
+    height: auto;
+  }
+}
+@media screen and (max-width: 393px) {
+  .hero .cols-2 p {
+    width: 80%;
+  }
+  .how .how-wrapper .boxes {
+    width: 43%;
+  }
+  .testimonials .testimonials-wrapper .boxes {
+    width: 44%;
+  }
+  .cart-wrapper .cart-scroll .cartshell img {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 384px) {
+  .contact-wrapper {
+    height: auto;
+  }
+}
+@media screen and (max-width: 375px) {
+  .contact-wrapper {
+    height: auto;
+  }
+}
+@media screen and (max-width: 360px) {
+  .hero .cols-2 h1 {
+    width: 100%;
+  }
+  .testimonials .testimonials-wrapper .boxes {
+    width: 53%;
+  }
+}
+@media screen and (max-width: 353px) {
+  .hero .cols-2 h1 {
+    width: 100%;
+  }
+  .display .food-card .boxes {
+    width: 65%;
+  }
+  .how .how-wrapper .boxes {
+    width: 44%;
+  }
+  .testimonials .testimonials-wrapper .boxes {
+    width: 55%;
+  }
+  .food-modal2 .cols-2 img {
+    width: 75%;
+  }
+}
+@media screen and (max-height: 332px) {
+  .food-modal2 {
+    height: 98vh;
+    overflow: auto;
+  }
+}
+@media screen and (max-width: 320px) {
+  header nav .logo {
+    left: 30px;
+  }
+  header nav ul li.navbtn {
+    margin: 15px;
+  }
+  .contact-wrapper .cols-2 .box,
+  .contact-wrapper .cols-2 form {
+    width: 99%;
+    border-radius: 0px;
+    box-shadow: 0px 0px 0px;
+  }
+  .contact-wrapper .cols-2 .box table {
+    box-shadow: 0px 0px 0px;
+  }
+  .contact-wrapper .cols-2 .box table td {
+    padding: 10px 0px;
+  }
+  .contact-wrapper .cols-2 .box .links {
+    border-radius: 0px;
+    box-shadow: none;
+  }
+  .contact-wrapper .cols-2 .box table td:nth-child(1) {
+    border-right: none;
+    padding: 0px;
+    text-align: left;
+    padding-left: 5px;
+  }
+  .cat-wrapper .a .boxes {
+    width: 68%;
+  }
+  .food-modal2  {
+    display: block;
+  }
+  .food-modal2 .cols-2 img {
+    width: 75%;
+  }
+  .hero .cols-2 img {
+    width: 90%;
+  }
+  .hero .cols-2 h1 {
+    width: 86%;
+    font-size: 2.5rem;
+    text-align: left;
+  }
+  .how .how-wrapper .boxes {
+    width: 50%;
+  }
+  .food-modal2 .cols-2 table td {
+    padding: 10px 30px;
+  }
+}
+@media screen and (max-width: 280px) {
+  header nav .logo {
+    left: 15px;
+  }
+  header nav ul li.navbtn {
+    margin: 10px;
+  }
+  .hero .cols-2 img {
+    margin-top: -50px;
+  }
+  .hero .cols-2 h1 {
+    width: 90%;
+    font-size: 2.3rem
+  }
+  .display .food-card .boxes {
+    width: 85%;
+  }
+  .how .how-wrapper .boxes {
+    width: 60%;
+  }
+  .testimonials .testimonials-wrapper .boxes {
+    width: 70%;
+  }
+  .mobile-list li a {
+    padding: 15px 10px 15px 0px;
+  }
+  .contact-wrapper .cols-2 .box table td {
+    word-break: break-all;
+    text-align: left;
+    width: 60%;
+    padding: 15px 5px;
+  }
+  .contact-wrapper .cols-2 .box table td:nth-child(1) {
+    text-align: center;
+    width: 30%;
+  }
+  .cat-wrapper .a .boxes {
+    width: 75%;
+  }
+  .food-modal2 .cols-2 table td {
+    padding: 10px 20px;
+  }
+}
+@media screen and (max-width: 240px) {
+  body {
+    font-size: 14px;
+  }
+  header nav {
+    height: 3em;
+  }
+  header nav .logo {
+    font-size: 1.2em;
+  }
+  header nav ul {
+    transform: scale(.85);
+  }
+  .mobile-list li a {
+    padding: 10px 10px 10px 0px;
+  }
+  .hero .cols-2 h1 {
+    font-size: 2.2rem;
+    width: 100%;
+    text-align: center;
+  }
+  .hero .cols-2 p {
+    width: 90%;
+  }
+  .cart-wrapper{
+    padding: 5px;
+  }
+  .cart-wrapper .cart-scroll .cartshell .btn-wrapper > button {
+    width: 90%;
+    margin: 5px 0px;
+    padding: 12px;
+    border-radius: 5px;
+  }
+  .contact-wrapper .cols-2 form h3{
+    padding: 0;
+    margin: 10px 0px;
+  }
+  .contact-wrapper .cols-2 form input,
+  .contact-wrapper .cols-2 form textarea {
+    width: 95%;
+    margin: 5px 0px;
+    border-radius: 5px;
+  }
+  .categories button {
+    margin: 0;
+    font-size: .9em;
+  }
+  .food-modal2 .cols-2:nth-child(1){
+    margin-top: 30px;
+  }
+}
